@@ -1,29 +1,135 @@
-.part1{
-	
-	display: flex;
-
-    position: relative;
-  left: 100px;
-
+* {
+  box-sizing: border-box;
 }
-  .carousel-inner img {
 
-     width: 100%;
-  	height: 80vh;
-  vertical-align: middle;
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+html,
+body{
+  height: 100%;
+  font-family: "Raleway", sans-serif;font-size: 22px;
+}
+
+.bgimg {
+  
+  background-image: url("PizzaMain.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  background-size: cover; /* Resize the background image to cover the entire container */
+ background-position: center;
+ min-height: 100%;
+  }
+  .bgimgtext{
+    display: flex;
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   }
 
-/* menu-toggle{
- 	max-width: auto;
- }
- .toggle-container {
-    clear: both;
-    padding: 20px 0;
-    text-rendering: optimizeLegibility;
-    display: inline-block;
-    max-width: auto;
- }
- .row {
- 	display: inline-flex;
- 	width: auto;
- }*/
+.headblock {
+  display: flex;
+  margin-bottom: 6rem;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.headblock-brand {
+      margin-right: 200px;
+    margin-left: 200px;
+    font-weight: 20px;
+    color: white;
+    font-size: 35px;
+      font-family: 'Sarina';
+}
+
+.nav-headblock .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-headblock .nav-link:hover,
+.nav-headblock .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-headblock .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.splashtext {
+  
+  padding: 0 1.5rem;
+  color:white;
+  text-shadow: 2px 2px red;
+ 
+}
+.splashtext .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 500;
+  background-color: gray;
+  border-radius: 25px;
+  
+}
+
+.menutext{
+  color: black;
+  margin: 1rem;
+}
+.menufooter .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 500;
+  background-color: gray;
+  border-radius: 25px;
+  text-shadow: 2px 2px red;
+ 
+  
+}
+.menufooter{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+  /* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* hover effect*/
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+    background: #125688;
+    color: white;
+    /* to make corners rounded
+    border-radius: 50%; */
+  }
+  
